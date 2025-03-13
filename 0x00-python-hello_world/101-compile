@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Compiling $PYFILE..."
+
+outputFile=$(echo "$PYFILE"c)
+python -m $outputFile $PYFILE 2> /dev/null 1> /dev/null
+exit 0
