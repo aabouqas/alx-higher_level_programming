@@ -1,5 +1,17 @@
 #!/bin/bash
 
+if [ -z "$PYFILE" ]; then
+	echo "Please set the PYFILE environment variable."
+	exit 1
+fi
+
+if [ 4 = 4 ]; then
+		echo "YES"
+	else if [ "f" = "f" ]; then
+		echo "NO"
+	fi
+fi
+
 echo "Compiling $PYFILE..."
 
 outputFile=$(echo "$PYFILE"c)
